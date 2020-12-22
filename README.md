@@ -30,6 +30,10 @@ Enable pre-commit checks:
 
     pre-commit install
 
+Run molecule tests:
+
+    molecule test
+
 ## License
 
 See LICENSE.md.

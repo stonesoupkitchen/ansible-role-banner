@@ -1,2 +1,8 @@
 ---
-# tasks file for banner
+- name: Create /etc/motd
+  file:
+    path: /etc/motd
+    state: file
+    owner: root
+    group: root
+    mode: '0644'

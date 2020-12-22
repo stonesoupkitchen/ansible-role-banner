@@ -1,0 +1,22 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: Collect /etc/motd file system information
+    stat:
+      path: /etc/motd
+    register: etc_motd
+
+  - name: /etc/motd should be owned by root
+    assert:
+      that:
+        - etc_motd.stat.uid == 0
+        - etc_motd.stat.gid == 0
+
+  - name: /etc/motd should have permissions 0644
+    assert:
+      that: etc_motd.stat.mode == "0644"
+
