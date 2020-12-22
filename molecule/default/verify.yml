@@ -47,3 +47,10 @@
   - name: /etc/issue.net should have permissions 0644
     assert:
       that: etc_issue_net.stat.mode == "0644"
+
+  - name: All banner files should have same contents
+    assert:
+      that:
+        - etc_motd.stat.checksum == etc_issue.stat.checksum
+        - etc_motd.stat.checksum == etc_issue_net.stat.checksum
+

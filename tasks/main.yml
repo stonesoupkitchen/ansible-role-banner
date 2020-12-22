@@ -1,25 +1,25 @@
 ---
 - name: Create /etc/motd
-  file:
-    path: /etc/motd
-    state: file
+  copy:
+    dest: /etc/motd
     owner: root
     group: root
     mode: '0644'
+    content: "{{ banner_msg }}"
 
 - name: Create /etc/issue
-  file:
-    path: /etc/issue
-    state: file
+  copy:
+    dest: /etc/issue
     owner: root
     group: root
     mode: '0644'
+    content: "{{ banner_msg }}"
 
 - name: Create /etc/issue.net
-  file:
-    path: /etc/issue.net
-    state: file
+  copy:
+    dest: /etc/issue.net
     owner: root
     group: root
     mode: '0644'
+    content: "{{ banner_msg }}"
 
