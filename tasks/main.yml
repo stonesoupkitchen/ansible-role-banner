@@ -6,3 +6,20 @@
     owner: root
     group: root
     mode: '0644'
+
+- name: Create /etc/issue
+  file:
+    path: /etc/issue
+    state: file
+    owner: root
+    group: root
+    mode: '0644'
+
+- name: Create /etc/issue.net
+  file:
+    path: /etc/issue.net
+    state: file
+    owner: root
+    group: root
+    mode: '0644'
+

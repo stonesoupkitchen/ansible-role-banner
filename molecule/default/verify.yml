@@ -1,6 +1,4 @@
 ---
-# This is an example playbook to execute Ansible tests.
-
 - name: Verify
   hosts: all
   gather_facts: false
@@ -20,3 +18,32 @@
     assert:
       that: etc_motd.stat.mode == "0644"
 
+  - name: Collect /etc/issue file system information
+    stat:
+      path: /etc/issue
+    register: etc_issue
+
+  - name: /etc/issue should be owned by root
+    assert:
+      that:
+        - etc_issue.stat.uid == 0
+        - etc_issue.stat.gid == 0
+
+  - name: /etc/issue should have permissions 0644
+    assert:
+      that: etc_issue.stat.mode == "0644"
+
+  - name: Collect /etc/issue.net file system information
+    stat:
+      path: /etc/issue.net
+    register: etc_issue_net
+
+  - name: /etc/issue.net should be owned by root
+    assert:
+      that:
+        - etc_issue_net.stat.uid == 0
+        - etc_issue_net.stat.gid == 0
+
+  - name: /etc/issue.net should have permissions 0644
+    assert:
+      that: etc_issue_net.stat.mode == "0644"
