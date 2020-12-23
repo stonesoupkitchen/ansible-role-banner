@@ -1,5 +1,5 @@
 galaxy_info:
-  name: banner
+  role_name: banner
   author: stonesoupkitchen
   description: Configure services that display banners to users
   license: BSD-3-Clause
