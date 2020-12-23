@@ -1,5 +1,6 @@
 galaxy_info:
-  author: Stone Soup Kitchen
+  name: banner
+  author: stonesoupkitchen
   description: Configure services that display banners to users
   license: BSD-3-Clause
   min_ansible_version: 2.9
