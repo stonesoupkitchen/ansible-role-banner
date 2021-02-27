@@ -1,7 +1,7 @@
 Modified BSD License
 ====================
 
-Copyright © 2020, Joshua Ford
+Copyright © 2021, Joshua Ford
 _All rights reserved._
 
 Redistribution and use in source and binary forms, with or without
