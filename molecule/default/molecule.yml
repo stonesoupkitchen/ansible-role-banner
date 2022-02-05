@@ -5,8 +5,8 @@ driver:
   name: docker
 platforms:
   - name: instance
-    image: docker.io/pycontribs/debian:latest
-    pre_build_image: true
+    image: docker.io/${MOLECULE_DISTRO:-'debian:10'}
+    privileged: true
 provisioner:
   name: ansible
 verifier:

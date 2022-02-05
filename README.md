@@ -4,37 +4,39 @@ An Ansible role for configuring services that display banners to users.
 
 ## Requirements
 
-TODO.
+Supported operating systems:
+* Debian 10 (Buster)
+* Debian 11 (Bullseye)
 
 ## Role Variables
 
 TODO.
 
-## Dependencies
+## Examples
 
-TODO.
-
-## Example Playbook
-
-TODO.
+```yaml
+- hosts: all
+  roles:
+    - stonesoupkitchen.sudo
+```
 
 ## Development
 
-Ceate a virtual environment and install modules from requirements.txt:
+A Makefile is included for easier development with `pipenv`.
+After cloning this repository,
+use the following commands to set up an environment.
 
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
+    pipenv install --dev
 
-Enable pre-commit checks:
+To lint your changes with ansible-lint:
 
-    pre-commit install
+    make lint
 
-Run molecule tests:
+To run tests with molecule:
 
-    molecule test
+    make test
 
 ## License
 
-See LICENSE.md.
+See [LICENSE](./LICENSE).
 
