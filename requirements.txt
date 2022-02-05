@@ -1,4 +1,0 @@
-ansible >= 2.9
-ansible-lint
-pre-commit >= 2.0.0, < 3.0.0
-molecule-docker

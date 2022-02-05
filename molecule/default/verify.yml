@@ -53,4 +53,3 @@
       that:
         - etc_motd.stat.checksum == etc_issue.stat.checksum
         - etc_motd.stat.checksum == etc_issue_net.stat.checksum
-
