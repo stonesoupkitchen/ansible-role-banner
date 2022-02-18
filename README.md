@@ -1,4 +1,6 @@
-# stonesoupkitchen-banner
+[![CI](https://github.com/StoneSoupKitchen/ansible-role-banner/actions/workflows/ci.yml/badge.svg)](https://github.com/StoneSoupKitchen/ansible-role-banner/actions/workflows/ci.yml)
+
+# Ansible role: banner
 
 An Ansible role for configuring services that display banners to users.
 
@@ -10,7 +12,12 @@ Supported operating systems:
 
 ## Role Variables
 
-TODO.
+The following table lists all variables that can be overridden
+and their default values.
+
+| Name           | Default Value    | Description                         |
+| -------------- | ---------------- | ----------------------------------- |
+| `banner_msg`   | See defaults.yml | The default message to show to users on login.|
 
 ## Examples
 
