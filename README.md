@@ -17,7 +17,7 @@ and their default values.
 
 | Name           | Default Value    | Description                         |
 | -------------- | ---------------- | ----------------------------------- |
-| `banner_msg`   | See defaults.yml | The default message to show to users on login.|
+| `banner_msg`   | See defaults/main.yml | The default message to show to users on login.|
 
 ## Examples
 
