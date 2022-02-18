@@ -17,7 +17,7 @@ TODO.
 ```yaml
 - hosts: all
   roles:
-    - stonesoupkitchen.sudo
+    - stonesoupkitchen.banner
 ```
 
 ## Development
